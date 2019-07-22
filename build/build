@@ -18,6 +18,7 @@ archive() {
     echo "archive"
     echo "$ROOT_DIR"
     echo "$BUILD_DIR"
+    echo "$VERSION"
     (cd "$ROOT_DIR" && \
         git archive -o "$BUILD_DIR/coog-bench.tar.gz" "$VERSION") || return 1
 }
